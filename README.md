@@ -6,7 +6,7 @@ For desktop and Pixel 5.
 
 
 ## Deployed link
-- [DEPLOYED WEBPAGE]()
+- [DEPLOYED WEBPAGE](https://oyollo.netlify.app/)
 
 ## Screenshot
 ![deployerlink](./oyollo%20homepage%20ss.png)
