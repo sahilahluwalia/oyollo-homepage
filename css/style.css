@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  /* background-color: black; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(../images/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px -60px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/* nav  */
+nav {
+  margin: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+nav > .logo {
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+.navlist > a {
+  color: black;
+}
+li {
+  display: inline-block;
+  position: relative;
+}
+li:hover {
+  font-weight: 600;
+  /* text-decoration: underline; */
+  /* text-decoration-thickness: 1.5px; */
+  /* text-decoration-style: solid; */
+  border-bottom: 1px solid #000;
+}
+
+.navbuttons > a {
+  color: black;
+}
+.navbuttons {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+  list-style: none;
+}
+.signup {
+  padding: 10px 20px 10px 20px;
+  background-color: #c6eafc;
+  border-radius: 5px;
+  border: 1px solid black;
+  position: relative;
+  bottom: 10px;
+}
+.signup:hover {
+  color: #c6eafc;
+  background-color: black;
+}
+
+/* section1  */
+.section1 {
+  margin: 100px 0px 250px 50px;
+}
+.section1 > h3 {
+  font-size: 56px;
+}
+.para {
+  margin: 20px 0px 20px 0px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  display: flex;
+}
+.box > .yellow {
+  border-radius: 5px 0px 0px 5px;
+  height: 50px;
+  width: 30px;
+  background-color: #fcf09b;
+}
+.box > .black {
+  border-radius: 0px 5px 5px 0px;
+  height: 50px;
+  width: 30px;
+  background-color: black;
+}
+.section1 > p {
+  font-size: 18px;
+  margin: 30px 0px 30px 0px;
+}
+
+/* buttons  */
+.mybuttons {
+  margin: 50px 0px 0px 0px;
+  gap: 25px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.downloadapp {
+  padding: 15px 40px 15px 40px;
+  border-radius: 5px;
+  background-color: #c1ecfd;
+  border: 1px solid black;
+}
+.downloadapp:hover {
+  padding: 15px 40px 15px 40px;
+  border-radius: 5px;
+  color: #c1ecfd;
+  background-color: black;
+  border: 1px solid black;
+}
+.getstarted {
+  padding: 15px 40px 15px 40px;
+  background-color: #fcf09b;
+  border: 1px solid #fcf09b;
+}
+.getstarted:hover {
+  padding: 15px 40px 15px 40px;
+  color: #fcf09b;
+  background-color: black;
+  border: 1px solid black;
+}
+
+/* section2  */
+.section2 {
+  padding: 0px 100px 0px 100px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  color: white;
+  position: relative;
+  background-color: black;
+  height: 150px;
+}
+.grayline {
+  background-color: gray;
+  height: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 2px;
+}
+.section2 > p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 50px;
+ /* vertical-align: baseline; */
+}
+.section2 > .card {
+  margin-top: 50px;
+  text-align: center;
+}
+.section2 > .card > p {
+  color: gray;
+}
+.section2 > img {
+  height: 300px;
+  position: relative;
+  bottom: 150px;
+  z-index: 5;
+}
+
+/* section 3 */
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section3 > .left {
+  flex: 1;
+}
+.section3 > .left > img {
+  height: 700px;
+}
+.section3 > .right {
+  flex: 1;
+  margin-left: 50px;
+  margin-top: 80px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+.section3 > .right > h2 {
+  margin: 0px 0px 50px 0px;
+  font-size: 52px;
+}
+.section3 > .right > .card {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+.section3 > .right > .card:hover {
+  color: white;
+  cursor: pointer;
+
+  background-color: black;
+}
+
+@media screen and (max-width: 480px) {
+  body > nav > div.navlist {
+    display: none;
+  }
+
+  body {
+    background-image: url(../images/background.png);
+    background-size: 250% 50%;
+    background-repeat: no-repeat;
+    background-position: 0px -60px;
+  }
+
+  .section1 > .mybuttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+  }
+  .section1 > h3  {
+    margin-right: 10px;
+  }
+  body > div.section1 > div.para > p{
+    margin-right: 10px;
+
+  }
+  .section2 {
+    display: flex;
+    height: 880px;
+    flex-wrap: wrap;
+  }
+  
+  .section2 > img {
+    position: relative;
+    bottom: 50px;
+  }
+  .section2 > .grayline {
+    display: none;
+    /* height: 2px;
+    width: 200px; */
+    
+  }
+  .section3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section3 > .left > img {
+    width: 100%;
+  }
+}
