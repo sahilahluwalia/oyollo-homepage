@@ -261,5 +261,7 @@ li:hover {
   }
   .section3 > .left > img {
     width: 100%;
+    height: 100%;
+
   }
 }
